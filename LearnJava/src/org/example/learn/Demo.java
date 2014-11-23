@@ -29,6 +29,13 @@ public class Demo {
 		int result = (firstNumber + secondNumber) * 5;
 		//print result to console
 		System.out.println(result);
+		
+		//doubles
+		double myValue = 1234.56789101112;
+		double mySecondValue = 3.14159;
+		
+		//add doubles, print result 
+		System.out.println(myValue + mySecondValue);
 	}
 
 }
