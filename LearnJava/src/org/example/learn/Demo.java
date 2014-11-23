@@ -20,6 +20,9 @@ public class Demo {
 		
 		//string concatentation
 		System.out.println(testMessage+mySecondMessage);
+		
+		//declare ints
+		int firstNumber = 55;
 	}
 
 }
