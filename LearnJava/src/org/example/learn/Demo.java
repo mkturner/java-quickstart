@@ -23,6 +23,12 @@ public class Demo {
 		
 		//declare ints
 		int firstNumber = 55;
+		int secondNumber = 5;
+		
+		//simple aritmetic
+		int result = (firstNumber + secondNumber) * 5;
+		//print result to console
+		System.out.println(result);
 	}
 
 }
