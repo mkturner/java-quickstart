@@ -34,8 +34,8 @@ public class Demo {
 		double myValue = 1234.56789101112;
 		double mySecondValue = 3.14159;
 		
-		//add doubles, print result 
-		System.out.println(myValue + mySecondValue * 2);
+		//add doubles, double result, print to console 
+		System.out.println((myValue + mySecondValue) * 2);
 	}
 
 }
