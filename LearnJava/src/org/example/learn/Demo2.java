@@ -15,6 +15,11 @@ public class Demo2 {
 		//instead of implicitly in 
 		//loop condition
 		boolean isGameOver = (lives < 1);
+		/*print boolean just to see what the
+		 * contained data looks like. 
+		 */
+		System.out.println(isGameOver);
+		
 		if (isGameOver){
 			System.out.println("Game Over!");
 		}
