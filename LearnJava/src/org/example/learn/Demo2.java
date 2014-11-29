@@ -26,6 +26,9 @@ public class Demo2 {
 		else{
 			System.out.println("You are still alive!");
 		}
+		Player marv = new Player(); 
+		//instantiating member of class
+		
 	}
 
 }
