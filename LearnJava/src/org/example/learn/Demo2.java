@@ -36,6 +36,11 @@ public class Demo2 {
 		// never access members outside the class
 		// use get/set methods
 		
+		//Use new class
+		SecurePlayer secureMarv = new SecurePlayer();
+		System.out.println(secureMarv.getHandlename());
+		//improved way to access name, still undefined though
+		
 		
 	}
 
