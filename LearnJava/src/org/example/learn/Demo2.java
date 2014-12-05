@@ -28,6 +28,9 @@ public class Demo2 {
 		}
 		Player marv = new Player(); 
 		//instantiating member of class
+		System.out.println(marv.handlename);
+		//accessing data within class (insecure)
+		
 		
 	}
 
