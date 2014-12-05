@@ -62,4 +62,8 @@ public class SecurePlayer {
 	public void setScore(int score) {
 		this.score = score;
 	}
+	public void setNameAndLevel(String name, int level){
+		this.handlename = name;
+		this.level = level;
+	}
 }

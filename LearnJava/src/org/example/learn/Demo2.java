@@ -43,10 +43,16 @@ public class Demo2 {
 		SecurePlayer secureMarv = new SecurePlayer();
 		System.out.println(secureMarv.getHandlename());
 		//improved way to access name, still undefined though
-		secureMarv.setHandlename("marv");
+		secureMarv.setHandlename("Secure Marv");
 		//defines name of the secureMarv object (secure)
 		System.out.println(secureMarv.getHandlename());
 		//returns name of object to println function (secure)
+		
+		SecurePlayer lola = new SecurePlayer();
+		lola.setNameAndLevel("Lola", 9001);
+		System.out.println(lola.getHandlename());
+		System.out.println(lola.getLevel());
+		
 		
 		
 	}
