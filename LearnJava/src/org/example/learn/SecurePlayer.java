@@ -13,9 +13,9 @@ public class SecurePlayer {
 	//constructor
 	public SecurePlayer() {
 		//set all default values
-		lives = 3;
-		level = 1;
-		score = 0;
+		this.lives = 3;
+		this.level = 1;
+		this.score = 0;
 	}
 	
 	// second constructor, for when you want to set
@@ -26,9 +26,9 @@ public class SecurePlayer {
 		* using different constructor 
 		*/
 		setHandlename(handle);
-		lives = 3;
-		level = 1;
-		score = 0;
+		this.lives = 3;
+		this.level = 1;
+		this.score = 0;
 	}
 	
 	public String getHandlename() {
