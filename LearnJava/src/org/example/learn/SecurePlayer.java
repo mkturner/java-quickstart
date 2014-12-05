@@ -17,7 +17,20 @@ public class SecurePlayer {
 		level = 1;
 		score = 0;
 	}
-
+	
+	// second constructor, for when you want to set
+	// the name of the new object upon creation.
+	public SecurePlayer(String handle) {
+		/*set all default values
+		* NEW: ability to define name during instantiation
+		* using different constructor 
+		*/
+		setHandlename(handle);
+		lives = 3;
+		level = 1;
+		score = 0;
+	}
+	
 	public String getHandlename() {
 		return handlename;
 	}
