@@ -30,6 +30,11 @@ public class Demo2 {
 		//instantiating member of class
 		System.out.println(marv.handlename);
 		//accessing data within class (insecure)
+		//hamdlename is undefined as of now.
+		marv.handlename = "Marv";
+		//setting name (insecure)
+		// never access members outside the class
+		// use get/set methods
 		
 		
 	}
