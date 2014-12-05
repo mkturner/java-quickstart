@@ -33,6 +33,9 @@ public class Demo2 {
 		//hamdlename is undefined as of now.
 		marv.handlename = "Marv";
 		//setting name (insecure)
+		System.out.println(marv.handlename);
+		//prints handlename (insecure)
+		
 		// never access members outside the class
 		// use get/set methods
 		
@@ -40,6 +43,10 @@ public class Demo2 {
 		SecurePlayer secureMarv = new SecurePlayer();
 		System.out.println(secureMarv.getHandlename());
 		//improved way to access name, still undefined though
+		secureMarv.setHandlename("marv");
+		//defines name of the secureMarv object (secure)
+		System.out.println(secureMarv.getHandlename());
+		//returns name of object to println function (secure)
 		
 		
 	}
