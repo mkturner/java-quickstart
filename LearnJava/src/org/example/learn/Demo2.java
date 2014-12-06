@@ -52,6 +52,7 @@ public class Demo2 {
 		lola.setNameAndLevel("Lola", 9001);
 		System.out.println(lola.getHandlename());
 		System.out.println(lola.getLevel());
+		System.out.println(lola.getWeapon().getName());
 		
 		
 		

@@ -7,6 +7,7 @@ public class SecurePlayer {
 	private int lives;
 	private int level;
 	private int score;
+	private Weapon weapon;
 	
 	//methods
 	
@@ -16,6 +17,7 @@ public class SecurePlayer {
 		this.lives = 3;
 		this.level = 1;
 		this.score = 0;
+		setDefaultWeapon();
 	}
 	
 	// second constructor, for when you want to set
@@ -29,6 +31,7 @@ public class SecurePlayer {
 		this.lives = 3;
 		this.level = 1;
 		this.score = 0;
+		setDefaultWeapon();
 	}
 	
 	public String getHandlename() {
@@ -66,4 +69,16 @@ public class SecurePlayer {
 		this.handlename = name;
 		this.level = level;
 	}
+	private void setDefaultWeapon(){
+		this.weapon = new Weapon("Sword", 10, 20);
+	}
+
+	public Weapon getWeapon() {
+		return weapon;
+	}
+
+	public void setWeapon(Weapon weapon) {
+		this.weapon = weapon;
+	}
+	
 }
