@@ -27,11 +27,9 @@ public class SecurePlayer {
 		* NEW: ability to define name during instantiation
 		* using different constructor 
 		*/
+		this();
+		//uses default constructor, code reuse/DRY
 		setHandlename(handle);
-		this.lives = 3;
-		this.level = 1;
-		this.score = 0;
-		setDefaultWeapon();
 	}
 	
 	public String getHandlename() {
