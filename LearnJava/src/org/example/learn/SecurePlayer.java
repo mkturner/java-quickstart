@@ -13,7 +13,7 @@ public class SecurePlayer {
 	private Weapon weapon;
 	//make array to represent inventory
 	//instead of 5, 10+ InventoryItem objects 
-	private ArrayList<InventoryItem> inventoryitems;
+	private ArrayList<InventoryItem> inventoryItems;
 	//methods
 	
 	//constructor
@@ -24,6 +24,7 @@ public class SecurePlayer {
 		this.level = 1;
 		this.score = 0;
 		setDefaultWeapon();
+		inventoryItems = new ArrayList<InventoryItem>();
 	}
 	
 	// second constructor, for when you want to set
@@ -91,6 +92,29 @@ public class SecurePlayer {
 	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
+
+	public ArrayList<InventoryItem> getInventoryItems() {
+		return inventoryItems;
+	}
+
+	public void setInventoryItems(ArrayList<InventoryItem> inventoryitems) {
+		this.inventoryItems = inventoryitems;
+	}
 	
+	public void addInventoryItem(InventoryItem item){
+		inventoryItems.add(item);
+	}
+	public boolean dropInvetoryItem(InventoryItem item){
+		// check if item exists
+		if(this.inventoryItems.contains(item)){
+			// delete item if it was found
+			inventoryItems.remove(item);
+			//tell main() that item drop was successful
+			return true;
+		}
+		//if item was not found then tell main()
+		//it could not be found
+		return false;
+	}
 	
 }
