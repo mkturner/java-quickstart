@@ -1,6 +1,9 @@
 //Player Class Improved
 package org.example.learn;
 
+//must import ArrayList functionality in order to use it
+import java.util.ArrayList;
+
 public class SecurePlayer {
 	//instance variables (fields in java jargon)
 	private String handlename;
@@ -8,7 +11,9 @@ public class SecurePlayer {
 	private int level;
 	private int score;
 	private Weapon weapon;
-	
+	//make array to represent inventory
+	//instead of 5, 10+ InventoryItem objects 
+	private ArrayList<InventoryItem> inventoryitems;
 	//methods
 	
 	//constructor
@@ -32,6 +37,8 @@ public class SecurePlayer {
 		//uses default constructor, code reuse/DRY
 		setHandlename(handle);
 	}
+	//third constructor, for setting name and level
+	//upon instantiation
 	public SecurePlayer(String handle, int level){
 		this();
 		setHandlename(handle);
