@@ -14,6 +14,7 @@ public class SecurePlayer {
 	//constructor
 	public SecurePlayer() {
 		//set all default values
+		this.handlename = "Unknown Player";
 		this.lives = 3;
 		this.level = 1;
 		this.score = 0;
@@ -30,6 +31,11 @@ public class SecurePlayer {
 		this();
 		//uses default constructor, code reuse/DRY
 		setHandlename(handle);
+	}
+	public SecurePlayer(String handle, int level){
+		this();
+		setHandlename(handle);
+		setLevel(level);
 	}
 	
 	public String getHandlename() {
@@ -78,5 +84,6 @@ public class SecurePlayer {
 	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
+	
 	
 }
