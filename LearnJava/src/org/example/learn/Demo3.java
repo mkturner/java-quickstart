@@ -16,6 +16,8 @@ public class Demo3 {
 		bawse.setWeapon(bawseAxe);
 		System.out.println(bawse.getWeapon().getName());
 		
+		//make room for this part
+		System.out.println();
 		//create Item Record Deal
 		InventoryItem recordDeal = new InventoryItem(ItemType.ARMOR, "Record Deal");
 		//step A: create new item
@@ -26,6 +28,9 @@ public class Demo3 {
 		//Combine steps A and B, do simultaneously
 		//We don't NEED to store the new item to make it
 		bawse.addInventoryItem(new InventoryItem(ItemType.RING, "MMG Ring"));
+		//lets make more items
+		bawse.addInventoryItem(new InventoryItem(ItemType.POTION, "MMG Juice"));
+		bawse.addInventoryItem(new InventoryItem(ItemType.ARMOR, "MMG Pendant"));
 		
 		//Show all items belonging to bawse object
 		//aggregate all items into allItems
@@ -33,6 +38,8 @@ public class Demo3 {
 		//for every item in allItems, print that item
 		for(InventoryItem item : allItems){
 			System.out.println(item.getName());
+			//doesn't print weapon because Weapon class declared
+			//separate from InventoryItem class 
 		}
 	}	
 }
