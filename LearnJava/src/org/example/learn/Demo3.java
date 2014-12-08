@@ -12,7 +12,7 @@ public class Demo3 {
 		System.out.println("");
 		
 		System.out.println("Now, Change weapon of the object:");
-		Weapon bawseAxe = new Weapon("Maybach Axe", 15, 50);
+		Weapon bawseAxe = new Weapon("MMG Mic", 15, 50);
 		bawse.setWeapon(bawseAxe);
 		System.out.println(bawse.getWeapon().getName());
 		
