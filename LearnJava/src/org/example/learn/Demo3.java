@@ -18,6 +18,7 @@ public class Demo3 {
 		
 		//make room for this part
 		System.out.println();
+		System.out.println("These are the items that belong to the object.");
 		//create Item Record Deal
 		InventoryItem recordDeal = new InventoryItem(ItemType.ARMOR, "Record Deal");
 		//step A: create new item
@@ -41,5 +42,9 @@ public class Demo3 {
 			//doesn't print weapon because Weapon class declared
 			//separate from InventoryItem class 
 		}
+		
+		//lets delete items
+		//one that obviously doesn't exist
+		boolean wasDeletedFalse = bawse.dropInvetoryItem()
 	}	
 }
