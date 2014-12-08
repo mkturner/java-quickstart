@@ -1,6 +1,6 @@
 package org.example.learn;
 
-enum ItemType {POTION, RING, ARMOR}
+enum ItemType {POTION, RING, ARMOR, PAPERWORK}
 //adds enumeration to specify all the possible item types
 public class InventoryItem {
 	
